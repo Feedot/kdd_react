@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 import { connect } from 'react-redux'
 
-import logo from '../../img/logo.jpg'
+import logo from '../../../img/logo.jpg'
 
 import {Link} from 'react-router-dom'
 

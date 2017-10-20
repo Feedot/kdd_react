@@ -1,19 +1,19 @@
 import React,{Component} from 'react'
 
-import Header from '../Header/index'
+import Header from '../../containers/Header/index'
 
-class Products extends Component {
+class Contacts extends Component {
 
     render(){
 
         return (
             <div>
                 <Header/>
-                <h1>Продукты</h1>
+                <h1>Контакты</h1>
             </div>
         )
     }
 
 }
 
-export default Products;
+export default Contacts;

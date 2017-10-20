@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 
-import Header from '../Header/index'
+import Header from '../../containers/Header/index'
 
 class PartnersAndClients extends Component {
 

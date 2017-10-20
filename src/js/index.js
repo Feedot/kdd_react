@@ -4,102 +4,23 @@ import React from 'react'
 
 import ReactDOM from 'react-dom';
 
-import { createStore, applyMiddleware, compose } from 'redux'
-
-import thunk from 'redux-thunk'
-
-import createHistory from 'history/createBrowserHistory'
-
-import { routerMiddleware } from 'react-router-redux'
-
 import {Provider} from 'react-redux'
 
-import { Router ,Route} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
-import Products from "./Products";
+import {ConnectedRouter as Router} from 'react-router-redux'
 
-import PartnersAndClients from "./PartnersAndClients"
+import Products from "./pages/Products";
 
-import TradeMarks from "./TradeMarks"
+import PartnersAndClients from "./pages/PartnersAndClients"
 
-import About from "./About"
+import TradeMarks from "./pages/TradeMarks"
 
-import Contacts from "./Contacts"
+import About from "./pages/About"
 
-const initialState = {
+import Contacts from "./pages/Contacts"
 
-    navigation: {
-
-        location: [ {
-            name:'Продукты',
-            link:'/'
-        },
-            {
-                name:'Партнеры и Клиенты',
-                link:'/partners_and_clients'
-            },{
-                name:'Торговые марки',
-                link: '/trade_marks'
-            },
-            {
-                name:'О нас',
-                link:'/about'
-            },
-            {
-                name:' Контакты',
-                link: '/contacts'
-            }
-        ],
-        activeClass:'/',
-        className:'link_location'
-    }
-
-}
-
-const history = createHistory();
-
-const enhancers = []
-
-const middleware = [
-    thunk,
-    routerMiddleware(history)
-]
-
-if (process.env.NODE_ENV === 'development') {
-    const devToolsExtension = window.devToolsExtension
-
-    if (typeof devToolsExtension === 'function') {
-        enhancers.push(devToolsExtension())
-    }
-}
-
-const composedEnhancers = compose(
-    applyMiddleware(...middleware),
-    ...enhancers
-)
-
-const store = createStore(
-    reducer,
-    initialState,
-    composedEnhancers
-);
-function reducer ( state = initialState ,action ){
-
-    const newState = state;
-
-    if( action.type === 'ACTIVE_LINK') {
-
-        newState.navigation.activeClass = action.payload;
-
-        return {...newState};
-
-    }
-
-
-    return state
-
-
-}
+import store, {history} from "./store"
 
 store.subscribe( ()=>{
 
