@@ -1,13 +1,8 @@
 import React from 'react'
-
 import { createStore, applyMiddleware, compose } from 'redux'
-
 import thunk from 'redux-thunk'
-
 import createHistory from 'history/createBrowserHistory'
-
 import { routerMiddleware } from 'react-router-redux'
-
 import reducer from './reducers/rootReducer'
 
 const initialState = {
