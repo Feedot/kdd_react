@@ -181,7 +181,7 @@ header.mobileMenu ul a:hover{
     color: #6795c9;
 }@font-face {
     font-family: Roboto-Regular;
-    src:url(/kdd_react/./fonts/Roboto-Regular.ttf);
+    src:url(./fonts/Roboto-Regular.ttf);
 }
 body{
     margin: 0px;
