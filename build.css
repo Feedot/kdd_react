@@ -48,7 +48,7 @@ button span:before{
     transition: all .5s;
 
 }
-ul{
+ul.nav{
     position: absolute;
     list-style: none;
     text-align: right;
@@ -58,22 +58,22 @@ ul{
     font-size: 16px;
     display: none;
 }
-ul li {
+ul.nav li {
     display: inline-block;
     margin-right:-1px;
 }
-ul li a{
+ul.nav li a{
     padding: 40px 10px;
     text-decoration: none;
     color: black;
 }
 
-ul li a:hover{
+ul.nav li a:hover{
     background: rgba(91,159,224,0.8);
     color: white;
 }
 
-ul li a.active{
+ul.nav li a.active{
     background: #5b9fe0;
     color: white;
 
@@ -100,7 +100,7 @@ header.full_screen button{
 
 }
 
-header.full_screen ul{
+header.full_screen ul.nav{
 
     display: block;
 
@@ -147,7 +147,7 @@ header.mobileMenu button.active span:after{
 }
 
 
-header.mobileMenu ul {
+header.mobileMenu ul.nav {
 
     display: block;
     position: absolute;
@@ -161,14 +161,14 @@ header.mobileMenu ul {
 
 }
 
-header.mobileMenu ul li{
+header.mobileMenu ul.nav li{
 
     font-size:18px;
 
     display: block;
 }
 
-header.mobileMenu ul a{
+header.mobileMenu ul.nav a{
 
     padding:10px;
     background: none;
@@ -176,9 +176,110 @@ header.mobileMenu ul a{
 
 }
 
-header.mobileMenu ul a:hover{
+header.mobileMenu ul.nav a:hover{
 
     color: #6795c9;
+}aside .type_bar{
+    margin: 0px;
+
+    width: 215px;
+
+    border-top:1px solid #d3d3d3;
+    border-bottom:1px solid #d3d3d3;
+
+}
+
+aside p {
+    position: relative;
+    width: 200px;
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+
+}
+
+aside p:after, aside p:before{
+    content: "";
+    width: 0;
+    height: 0;
+
+    right: 10px;
+    margin-top: -6px;
+}
+
+aside p:after{
+    position: absolute;
+    top: 21px;
+
+    border: 4px solid transparent;
+    border-top: 8px solid #000;
+}
+
+aside p:before{
+
+    position: absolute;
+    bottom: 17px;
+
+    border: 4px solid transparent;
+    border-bottom: 8px solid #000;
+
+}
+
+aside ul.products_types{
+
+    position: absolute;
+    visibility: hidden;
+    z-index: 2;
+    top: 145px;
+    left: -40px;
+    display: block;
+
+}
+aside ul.products_types.show{
+    visibility: visible;
+}
+
+aside ul.products_types:hover{
+    visibility: visible;
+}
+aside ul.products_types li{
+    width: 200px;
+    padding: 5px;
+    list-style: none;
+    background: #fff;
+    display: list-item;
+
+    border: 1px solid #d3d3d3;
+    border-top: none;
+
+
+}
+aside ul.products_types li:hover{
+
+    background: #d3d3d3;
+
+}
+input.priceNav{
+    -webkit-appearance: textfield;
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+}
+
+.price_nav_bar{
+
+    width: 215px;
+    padding-bottom: 10px;
+
+}aside {
+
+    position: fixed;
+    width: 200px;
+    margin-left: 20px;
+    padding-right: 50px;
+    border-right: 1px solid #d3d3d3;
+
 }@font-face {
     font-family: Roboto-Regular;
     src:url(./fonts/Roboto-Regular.ttf);
