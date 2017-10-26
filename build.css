@@ -634,7 +634,7 @@ article{
     display: inline-block;
 }@font-face {
     font-family: Roboto-Regular;
-    src:url(/./fonts/Roboto-Regular.ttf);
+    src:url(./fonts/Roboto-Regular.ttf);
 }
 body{
     margin: 0px;
