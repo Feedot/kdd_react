@@ -632,9 +632,134 @@ article{
     max-height: 303px;
     overflow: scroll;
     display: inline-block;
-}@font-face {
+}
+.trade_marks section{
+    margin-top: 110px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    background-image: url(./img/src/img/trade_marks.jpg);
+    background-size: cover ;
+}
+
+.trade_marks section h1{
+    margin: 0px;
+    height: 50px;
+    padding: 12px;
+
+    color: white;
+    background: #5b9fe0;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.trade_marks .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.trade_marks #column-1,
+.trade_marks #column-2,
+.trade_marks #column-3 {
+    float: left;
+    min-height: 100%;
+    text-align: left;
+    padding: 20px;
+    box-sizing:border-box ;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.trade_marks #column-1 {
+    width: 33.333%;
+}
+
+.trade_marks #column-2 {
+    width: 33.333%;
+}
+
+.trade_marks #column-3 {
+    width: 33.333%;
+}
+.trade_marks #column-1 div ,
+.trade_marks #column-2 div ,
+.trade_marks #column-3 div {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.trade_marks #column-1 div img,
+.trade_marks #column-2 div img,
+.trade_marks #column-3 div img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+.about section{
+    margin-top: 110px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+}
+.about section h1{
+    margin: 0px;
+    height: 50px;
+    padding: 12px;
+
+    color: white;
+    background: #5b9fe0;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+.about .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.about #column-1,
+.about #column-2,
+.about #column-3 {
+    float: left;
+    min-height: 100%;
+    text-align: left;
+    padding: 20px;
+    box-sizing:border-box ;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.about #column-1 {
+    width: 33.333%;
+}
+
+.about #column-2 {
+    width: 33.333%;
+}
+
+.about #column-3 {
+    width: 33.333%;
+}
+
+.about #column-1 div img,
+.about #column-2 div img,
+.about #column-3 div img{
+    width:100%
+}
+@font-face {
     font-family: Roboto-Regular;
-    src:url(./fonts/Roboto-Regular.ttf);
+    src:url(./fonts/src/fonts/Roboto-Regular.ttf);
 }
 body{
     margin: 0px;
