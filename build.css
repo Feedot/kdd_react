@@ -415,6 +415,9 @@ article{
     border-left: 1px solid #d3d3d3;
 
 }
+.products aside.active{
+    border: none;
+}
 .products article .filter {
     padding: 20px;
     text-align: center;
@@ -453,7 +456,6 @@ article{
     background: rgba(255,255,255, 0.9);
     z-index: 1000;
     top:101px;
-    border: none;
 
 }
 .products.mobile aside.active *{
