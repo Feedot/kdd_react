@@ -260,6 +260,14 @@ aside .type_bar ul.products_types li:hover{
     background: #d3d3d3;
 
 }
+
+@media screen and (max-width: 900px){
+
+    aside .type_bar ul.products_types:focus{
+        visibility: visible;
+    }
+
+}
 input.priceNav{
     -webkit-appearance: textfield;
     padding: 5px;
