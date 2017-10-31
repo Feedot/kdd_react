@@ -416,7 +416,12 @@ article{
 
 }
 .products aside.active{
+    height: 100%;
     border: none;
+    overflow: scroll;
+}
+.products aside.active h4{
+    display: none;
 }
 .products article .filter {
     padding: 20px;
