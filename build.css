@@ -85,6 +85,7 @@ ul.nav li a.active{
     border-bottom: 2px solid #5b9fe0;
     top: 0px;
     z-index: 5;
+    transition: all 0.5s;
 }
 
 header img {
@@ -119,14 +120,14 @@ header.mobileMenu button.active {
 
 }
 
-header.mobileMenu button.active span{
+header.mobileMenu button span{
 
     outline: none;
     border-color: transparent ;
 
 }
 
-header.mobileMenu button.active span:before {
+header.mobileMenu button span:before {
 
 
     -webkit-transform: translateY(-9px) rotate(-45deg);
@@ -136,7 +137,7 @@ header.mobileMenu button.active span:before {
 
 }
 
-header.mobileMenu button.active span:after{
+header.mobileMenu button span:after{
 
 
     -webkit-transform: translateY(7px) rotate(45deg);
@@ -186,6 +187,7 @@ header.mobileMenu ul.nav a:hover{
 
     border-top:1px solid #d3d3d3;
     border-bottom:1px solid #d3d3d3;
+    position: relative;
 
 }
 
@@ -229,7 +231,7 @@ aside .type_bar ul.products_types{
     position: absolute;
     visibility: hidden;
     z-index: 2;
-    top: 145px;
+    top: 76px;
     left: -40px;
     display: block;
 
@@ -330,8 +332,11 @@ input.priceNav{
     padding-right: 50px;
     border-right: 1px solid #d3d3d3;
     top:120px;
+    transition: all 1s;
+    z-index: 5;
 
-}.item{
+}
+.item{
     width: 265px;
     margin: 5px;
     position: relative;
@@ -387,7 +392,6 @@ input.priceNav{
 }
 article{
 
-    min-height: 450px;
     padding-left: 50px;
     margin-left: 270px;
     margin-top:120px;
@@ -405,7 +409,103 @@ article{
     overflow-x: scroll;
     border-left: 1px solid #d3d3d3;
 
-}.modal_page{
+}
+.products article .filter {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px
+}
+
+.products article .filter:hover{
+
+
+    background: linear-gradient(white, #d3d3d3, white);
+    color: #4682b4;
+
+}
+
+.products.full_screen article .filter, .products.tablet article .filter {
+    display: none;
+}
+.products.mobile article{
+    margin-left: -50px;
+}
+
+.products.mobile article .filter {
+    display: block;
+}
+
+.products.mobile aside{
+    margin-left: -270px;
+}
+
+.products.mobile aside.active {
+
+    margin-left: 0px;
+    width:100%;
+    height: 100%;
+    background: rgba(255,255,255, 0.9);
+    z-index: 1000;
+    top:101px;
+
+}
+.products.mobile aside.active *{
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+.products aside button.ready{
+    display: none;
+ }
+.products.mobile aside.active button.ready{
+    background: #199e5a;
+    padding: 6px 80px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+
+}
+.products.mobile aside.active h1{
+    padding-top: 20px;
+    text-align: center;
+    border:none;
+}
+
+.products.mobile aside.active .type_bar {
+    border-top: 0px;
+}
+
+.products.mobile aside.active .type_bar ul.products_types{
+    top:70px;
+    left: -39px;
+}
+.products.mobile aside.active .type_bar ul.products_types li{
+    margin-bottom: 0px;
+}
+.products.mobile aside.active .type_bar h4{
+    text-align: center;
+}
+.products.mobile aside.active {
+
+}
+.products.mobileMenu aside{
+    margin-left: -270px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .products article {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+}
+.modal_page{
 
     position: fixed;
     top: 0;
@@ -462,6 +562,7 @@ article{
     padding: 10px;
     line-height: 22px;
     text-align: left;
+    overflow: hidden;
 
 }
 
@@ -535,6 +636,39 @@ article{
 .main_content_page .side_bar_content_page.active button.in_basket{
 
     display: none;
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .main_content_page .side_bar_content_page{
+        width: 28%;
+    }
+    .main_content_page .side_bar_content_page button.in_basket{
+        padding: 6px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .content_page {
+        height: 100%;
+        overflow: scroll;
+    }
+    .main_content_page .side_bar_content_page span.price{
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+    .main_content_page .side_bar_content_page input{
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        margin-left: 0px;
+    }
 
 }
 .basket_side_bar{
@@ -768,6 +902,13 @@ body{
 }
 h1.head{
     margin-top: 120px;
+}
+body button {
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 body .products{
