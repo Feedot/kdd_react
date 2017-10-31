@@ -263,7 +263,7 @@ aside .type_bar ul.products_types li:hover{
 
 @media screen and (max-width: 900px){
 
-    aside .type_bar ul.products_types:focus{
+    aside .type_bar ul.products_types:active{
         visibility: visible;
     }
 
