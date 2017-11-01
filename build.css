@@ -744,8 +744,8 @@ article{
         box-sizing: border-box;
     }
     .main_content_page .side_bar_content_page input{
-        /*width: 100%;*/
-        display: block;
+        width: 100%;
+        /*display: block;*/
         box-sizing: border-box;
         margin-left: 0px;
     }
