@@ -347,7 +347,6 @@ input.priceNav{
     /*top:50%;*/
     /*transform: translate(-55%,-60%);*/
     overflow: scroll;
-    padding: 100px;
     height: 80%;
 }
 aside .side_bar_wrapper{
