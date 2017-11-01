@@ -343,10 +343,9 @@ input.priceNav{
 }
 
 .products aside.active .side_bar_wrapper{
-    left:50%;
-    top:50%;
-    -webkit-transform: translate(-55%,-60%);
-            transform: translate(-55%,-60%);
+    /*left:50%;*/
+    /*top:50%;*/
+    /*transform: translate(-55%,-60%);*/
     overflow: scroll;
     padding: 100px;
     height: 80%;
@@ -440,7 +439,7 @@ article{
     overflow-y: scroll;
 }
 .products aside.active h4{
-    display: none;
+    /*display: none;*/
 }
 .products article .filter {
     padding: 20px;
