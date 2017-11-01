@@ -177,9 +177,24 @@ header.mobileMenu ul.nav a{
 
 }
 
+
 header.mobileMenu ul.nav a:hover{
 
     color: #6795c9;
+}
+
+header.mobileMenu ul.nav li{
+
+    font-size:18px;
+
+    display: block;
+}
+@media screen and (max-width: 450px) {
+
+    header.mobileMenu ul.nav li{
+
+        font-size:14px;
+    }
 }aside .type_bar{
     margin: 0px;
 
@@ -535,7 +550,7 @@ article{
         width: 150px;
         padding-bottom: 10px;
     }
-    .products article .item button.more{
+    .products article .item button.more.active,.products article .item button.in_basket.active{
         margin: auto;
         display: block;
         width: 90%;
@@ -560,14 +575,14 @@ article{
     .products.mobile aside.active .side_bar_wrapper h1 {
         margin-top: 50px;
     }
-    .products article .item button.more{
-        width: 90%;
-        padding: 5px;
-    }
-    .products article .item span{
-        padding: 3px;
+    /*.products article .item button.more{*/
+        /*width: 90%;*/
+        /*padding: 5px;*/
+    /*}*/
+    /*.products article .item span{*/
+        /*padding: 3px;*/
 
-    }
+    /*}*/
 
 }
 .modal_page{
@@ -710,19 +725,19 @@ article{
     .main_content_page .side_bar_content_page{
         width: 28%;
     }
-    .main_content_page .side_bar_content_page button.in_basket{
+    .main_content_page .side_bar_content_page button.in_basket,.main_content_page .side_bar_content_page button.delete{
         padding: 6px;
         width: 100%;
         box-sizing: border-box;
         margin-top: 10px;
     }
-
-}
-@media screen and (max-width: 550px) {
     .content_page {
-        height: 100%;
+        height: 90%;
         overflow: scroll;
     }
+}
+@media screen and (max-width: 550px) {
+
     .main_content_page .side_bar_content_page span.price{
         width: 100%;
         display: block;
@@ -775,6 +790,16 @@ article{
     width: 100%;
     box-sizing: border-box;
     cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+
+    .basket_side_bar{
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
 }.basket_item{
     height: 100px;
     position: relative;
@@ -826,12 +851,38 @@ article{
 
 }
 
+@media screen and (max-width: 400px){
+
+    .name_price_ammount{
+        left: 115px;
+    }
+
+}
+
 .basket_list{
     width: 68%;
     max-height: 303px;
     overflow: scroll;
     display: inline-block;
 }
+
+@media screen and (max-width: 700px){
+
+    .basket_list{
+        width:100%;
+    }
+
+}
+@media screen and (max-width: 500px){
+
+    .basket_list .basket_item button.delete{
+        bottom:auto;
+        top:20px;
+    }
+
+}
+
+
 .trade_marks section{
     margin-top: 110px;
     position: fixed;
