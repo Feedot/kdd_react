@@ -343,16 +343,13 @@ input.priceNav{
 }
 
 .products aside.active .side_bar_wrapper{
-    /*left:50%;*/
-    /*top:50%;*/
-    /*transform: translate(-55%,-60%);*/
     overflow: scroll;
     height: 80%;
 }
 aside .side_bar_wrapper{
 
     position: absolute;
-    width: 100%;
+    width: 90%;
     min-height: 450px;
     top:0px;
     left: 0px
