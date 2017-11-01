@@ -487,6 +487,7 @@ article{
     margin-bottom: 20px;
 
 }
+
 .products aside button.ready{
     display: none;
  }
@@ -557,9 +558,12 @@ article{
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
     .products article .item {
         width: 45%;
+    }
+    .products.mobile aside.active .side_bar_wrapper h1 {
+        margin-top: 50px;
     }
     .products article .item button.more{
         width: 90%;
