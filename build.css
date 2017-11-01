@@ -440,7 +440,7 @@ article{
     overflow-y: scroll;
 }
 .products aside.active h4{
-    /*display: none;*/
+    display: none;
 }
 .products article .filter {
     padding: 20px;
