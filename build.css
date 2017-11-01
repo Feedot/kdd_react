@@ -745,7 +745,7 @@ article{
     }
     .main_content_page .side_bar_content_page input{
         width: 100%;
-        display: block;
+        /*display: block;*/
         box-sizing: border-box;
         margin-left: 0px;
     }
