@@ -348,6 +348,7 @@ input.priceNav{
     -webkit-transform: translate(-55%,-60%);
             transform: translate(-55%,-60%);
     overflow: scroll;
+    padding: 100px;
     height: 80%;
 }
 aside .side_bar_wrapper{
