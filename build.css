@@ -84,7 +84,7 @@ ul.nav li a.active{
     background: white;
     border-bottom: 2px solid #5b9fe0;
     top: 0px;
-    z-index: 5;
+    z-index: 11;
     transition: all 0.5s;
 }
 
@@ -107,7 +107,7 @@ header.full_screen ul.nav{
 
 }
 
-header.mobileMenu {
+header.active {
     position: fixed;
     height: 100%;
 
@@ -115,19 +115,19 @@ header.mobileMenu {
 
 }
 
-header.mobileMenu button.active {
+header.active button.active {
 
 
 }
 
-header.mobileMenu button span{
+header.active button span{
 
     outline: none;
     border-color: transparent ;
 
 }
 
-header.mobileMenu button span:before {
+header.active button span:before {
 
 
     -webkit-transform: translateY(-9px) rotate(-45deg);
@@ -137,7 +137,7 @@ header.mobileMenu button span:before {
 
 }
 
-header.mobileMenu button span:after{
+header.active button span:after{
 
 
     -webkit-transform: translateY(7px) rotate(45deg);
@@ -148,7 +148,7 @@ header.mobileMenu button span:after{
 }
 
 
-header.mobileMenu ul.nav {
+header.active ul.nav {
 
     display: block;
     position: absolute;
@@ -162,14 +162,14 @@ header.mobileMenu ul.nav {
 
 }
 
-header.mobileMenu ul.nav li{
+header.active ul.nav li{
 
     font-size:18px;
 
     display: block;
 }
 
-header.mobileMenu ul.nav a{
+header.active ul.nav a{
 
     padding:10px;
     background: none;
@@ -178,12 +178,12 @@ header.mobileMenu ul.nav a{
 }
 
 
-header.mobileMenu ul.nav a:hover{
+header.active ul.nav a:hover{
 
     color: #6795c9;
 }
 
-header.mobileMenu ul.nav li{
+header.active ul.nav li{
 
     font-size:18px;
 
@@ -191,7 +191,7 @@ header.mobileMenu ul.nav li{
 }
 @media screen and (max-width: 450px) {
 
-    header.mobileMenu ul.nav li{
+    header.active ul.nav li{
 
         font-size:14px;
     }
@@ -353,7 +353,7 @@ input.priceNav{
     border-right: 1px solid #d3d3d3;
     top:120px;
     transition: all 0.5s;
-    z-index: 5;
+    z-index: 10;
 
 }
 
@@ -394,7 +394,8 @@ aside .side_bar_wrapper{
     height: 220px;
     box-sizing: border-box;
     position: relative;
-    background: #d3d3d3;
+    background: rgba(211,211,211, 0.5);
+
 }
 
 .item div.img_wrapper img.loaded{
@@ -463,6 +464,11 @@ article{
     border-left: 1px solid #d3d3d3;
 
 }
+.products.tablet,.products.mobile,.products.mini-mobile{
+
+    margin-top: -20px;
+
+}
 .products aside.active{
     height: 100%;
     border: none;
@@ -475,14 +481,16 @@ article{
     padding: 20px;
     text-align: center;
     width: 100%;
-    font-size: 16px
+    font-size: 16px;
+    background: transparent;
+
 }
 
 .products article .filter:hover{
 
 
-    background: linear-gradient(white, #d3d3d3, white);
-    color: #4682b4;
+    background: #5b9fe0;
+    color: white;
 
 }
 
@@ -507,7 +515,7 @@ article{
     width:100%;
     height: 100%;
     background: rgba(255,255,255, 0.9);
-    z-index: 1000;
+    z-index: 10;
     top:101px;
 
 }
