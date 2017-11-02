@@ -569,6 +569,9 @@ article{
         width: 150px;
         padding-bottom: 10px;
     }
+    .products article .item .img_wrapper{
+        height: 120px;
+    }
     .products article .item button.more.active,.products article .item button.in_basket.active{
         margin: auto;
         display: block;
