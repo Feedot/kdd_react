@@ -110,9 +110,6 @@ header.full_screen ul.nav{
 header.active {
     position: fixed;
     height: 100%;
-
-    background-color: rgba(253,253,253,.89)
-
 }
 
 header.active button.active {
@@ -622,7 +619,7 @@ article{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 6;
+    z-index: 13;
     background-color: rgba(0,0,0,.8);
 
 }
