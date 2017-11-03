@@ -1059,7 +1059,7 @@ article{
 .about #column-3 div img.spinner{
     width: auto;
 }
-.about div.img_wrapper{
+.about div.wrapper div.img_wrapper{
     margin-top: 20px;
     min-height: 50px;
     min-width: 50px;
