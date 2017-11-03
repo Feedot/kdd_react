@@ -1059,9 +1059,8 @@ article{
 .about #column-3 div img.spinner{
     width: auto;
 }
-.about #column-1 div.img_wrapper{
+.about div.img_wrapper{
     margin-top: 20px;
-    background: #d3d3d3;
     min-height: 50px;
     min-width: 50px;
     text-align: center;
