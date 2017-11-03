@@ -908,6 +908,84 @@ article{
 
 }
 
+.partner_and_clients section{
+
+    margin-top: 100px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    background-image: url(partner_clients.jpg);
+
+}
+
+.partner_and_clients section h1{
+    margin: 0px;
+    height: 50px;
+    padding: 12px;
+
+    color: white;
+    background: #5b9fe0;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.partner_and_clients  section .part_wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width:100%;
+}
+.partner_and_clients  section .part_wrapper  .img_wrapper{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 280px;
+    height: 300px;
+
+}
+
+.partner_and_clients  section .part_wrapper  .img_wrapper img.loaded{
+    width: 70%;
+}
+
+.partner_and_clients  section .part_wrapper  .img_wrapper img.spinner{
+    width: auto;
+}
+
+@media screen and (max-width: 900px) {
+
+    .partner_and_clients  section .part_wrapper{
+
+        -webkit-box-pack: center;
+
+            -ms-flex-pack: center;
+
+                justify-content: center;
+
+    }
+    .partner_and_clients section{
+        background-attachment: fixed;
+    }
+
+}
+
+
+
 
 .trade_marks section{
     margin-top: 100px;
@@ -1068,9 +1146,47 @@ article{
 
 @media screen and (max-width:1200px) {
 
-    .about p{
+    .about p,.about ul{
         font-size: 14px;
     }
+}
+
+@media screen and (max-width:900px) {
+    .about #column-1,
+    .about #column-2,
+    .about #column-3{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .about #column-1 div img,
+    .about #column-2 div img,
+    .about #column-3 div img{
+        width: 50%;
+    }
+    .about p,.about ul{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width:700px) {
+
+    .about #column-1 div img,
+    .about #column-2 div img,
+    .about #column-3 div img{
+        width: 70%;
+    }
+
+}
+@media screen and (max-width:500px) {
+
+    .about #column-1 div img,
+    .about #column-2 div img,
+    .about #column-3 div img{
+        width: 100%;
+    }
+
 }
 
 
