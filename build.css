@@ -1054,9 +1054,9 @@ article{
 .about #column-3 div img{
     width:100%
 }
-.about #column-1 div img.spiner,
-.about #column-2 div img.spiner,
-.about #column-3 div img.spiner{
+.about #column-1 div img.spinner,
+.about #column-2 div img.spinner,
+.about #column-3 div img.spinner{
     width: auto;
 }
 .about #column-1 div.img_wrapper{
