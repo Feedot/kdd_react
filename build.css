@@ -910,13 +910,14 @@ article{
 
 
 .trade_marks section{
-    margin-top: 110px;
-    position: fixed;
+    margin-top: 100px;
+    position: relative;
     height: 100%;
     width: 100%;
 
     background-image: url(trade_marks.jpg);
     background-size: cover ;
+    overflow: scroll;
 }
 
 .trade_marks section h1{
@@ -946,20 +947,11 @@ article{
     padding: 20px;
     box-sizing:border-box ;
     font-size: 16px;
+    width: 33.333%;
     line-height: 1.2;
 }
 
-.trade_marks #column-1 {
-    width: 33.333%;
-}
 
-.trade_marks #column-2 {
-    width: 33.333%;
-}
-
-.trade_marks #column-3 {
-    width: 33.333%;
-}
 .trade_marks #column-1 div ,
 .trade_marks #column-2 div ,
 .trade_marks #column-3 div {
@@ -980,10 +972,41 @@ article{
             transform: translate(-50%,-50%);
 }
 
+.trade_marks section.trade_marks p{
+
+    margin-bottom: 20px;
+
+}
+.trade_marks section.trade_marks p span{
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+    .trade_marks section{
+        height: auto;
+        position: relative;
+    }
+    .trade_marks #column-1,
+    .trade_marks #column-2,
+    .trade_marks #column-3{
+        float: none;
+        display: block;
+        width: 100%;
+        min-height: initial;
+
+    }
+    .trade_marks .wrapper {
+        height: auto;
+    }
+
+
+}
+
 .about section{
-    margin-top: 110px;
-    position: fixed;
-    height: 100%;
+    margin-top: 100px;
+    position: relative;
     width: 100%;
 
 }
@@ -1003,6 +1026,14 @@ article{
     height: 100%;
     margin: 0 auto;
 }
+.about .inline{
+    display: inline;
+}
+.about h3{
+    font-family: bold;
+    font-style: italic;
+}
+
 
 .about #column-1,
 .about #column-2,
@@ -1014,28 +1045,39 @@ article{
     box-sizing:border-box ;
     font-size: 16px;
     line-height: 1.2;
-}
-
-.about #column-1 {
     width: 33.333%;
 }
 
-.about #column-2 {
-    width: 33.333%;
-}
-
-.about #column-3 {
-    width: 33.333%;
-}
 
 .about #column-1 div img,
 .about #column-2 div img,
 .about #column-3 div img{
     width:100%
 }
+.about #column-1 div.img_wrapper{
+    margin-top: 20px;
+    background: #d3d3d3;
+    min-height: 50px;
+    min-width: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+
+    .about p{
+        font-size: 14px;
+    }
+}
+
+
+/*img_wrapper*/
 @font-face {
     font-family: Roboto-Regular;
     src:url(./fonts/src/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src:url(./fonts/src/fonts/Roboto-Bold.ttf);
 }
 body{
     margin: 0px;
