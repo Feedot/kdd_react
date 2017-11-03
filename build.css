@@ -1054,6 +1054,11 @@ article{
 .about #column-3 div img{
     width:100%
 }
+.about #column-1 div img.spiner,
+.about #column-2 div img.spiner,
+.about #column-3 div img.spiner{
+    width: auto;
+}
 .about #column-1 div.img_wrapper{
     margin-top: 20px;
     background: #d3d3d3;
