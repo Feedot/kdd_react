@@ -915,7 +915,7 @@ article{
     height: 100%;
     width: 100%;
 
-    background-image: url(partner_clients.jpg);
+    background-image: url(partners_clients.png);
 
 }
 
@@ -981,6 +981,37 @@ article{
     .partner_and_clients section{
         background-attachment: fixed;
     }
+    .partner_and_clients  section .part_wrapper  .img_wrapper{
+
+        width: 250px;
+        height: 200px;
+
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .partner_and_clients  section .part_wrapper{
+
+        -webkit-box-pack: center;
+
+            -ms-flex-pack: center;
+
+                justify-content: center;
+
+    }
+    .partner_and_clients section{
+        background-attachment: fixed;
+    }
+
+    .partner_and_clients  section .part_wrapper  .img_wrapper{
+
+        width: 100px;
+        height: 150px;
+
+    }
+
 
 }
 
