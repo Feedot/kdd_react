@@ -1149,7 +1149,7 @@ article{
 .about #column-3 {
     float: left;
     min-height: 100%;
-    text-align: left;
+    text-align: justify;
     padding: 20px;
     box-sizing:border-box ;
     font-size: 16px;
@@ -1198,6 +1198,9 @@ article{
     }
     .about p,.about ul{
         font-size: 16px;
+    }
+    .about ul{
+        text-align: left;
     }
 
 }
@@ -1249,6 +1252,14 @@ body button {
 body .products{
 
     padding-bottom: 20px;
+
+}
+@media screen and (min-width: 1440px) {
+
+    body{
+        width: 1440px;
+    }
+
 
 }
 /*# sourceMappingURL=build.css.map*/
