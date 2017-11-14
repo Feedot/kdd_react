@@ -369,6 +369,7 @@ aside .side_bar_wrapper{
 
 .item{
     width: 265px;
+    max-height: 323px;
     margin: 5px;
     position: relative;
     padding: 5px;
@@ -435,6 +436,12 @@ aside .side_bar_wrapper{
     background: #199e5a;
     padding: 6px 39px;
     border: none;
+
+}
+
+.item button.in_basket.active {
+
+    padding: 6px 35px;
 
 }
 
@@ -572,6 +579,7 @@ article{
     }
     .products article .item {
         width: 150px;
+        max-height: 267px;
         padding-bottom: 10px;
     }
     .products article .item .img_wrapper{
@@ -582,6 +590,9 @@ article{
         display: block;
         width: 90%;
         padding: 7px 0px;
+    }
+    .products article .item h3{
+        height: 32px;
     }
     .products article .item span{
         display: block;
@@ -660,6 +671,8 @@ article{
             transform: translate(-50%,-50%);
     width: 90%;
     max-width: 700px;
+    max-height: 700px;
+    overflow-y: scroll;
 }
 
 .main_content_page .info{
@@ -887,8 +900,6 @@ article{
 
 .basket_list{
     width: 68%;
-    max-height: 303px;
-    overflow: scroll;
     display: inline-block;
 }
 
@@ -908,9 +919,36 @@ article{
 
 }
 
+.content_page.success {
+
+    width: 500px;
+    height: 130px;
+
+}
+.content_page.success div {
+
+    margin-top: 20px;
+    padding:0 20px;
+    text-align: center;
+
+}
+
+.content_page.success div p {
+    margin-bottom: 25px;
+}
+
+.content_page.success div button{
+
+    padding: 5px 20px;
+    background: #cc8056;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
 .partner_and_clients section{
 
-    margin-top: 100px;
     position: relative;
     height: 100%;
     width: 100%;
@@ -919,10 +957,11 @@ article{
 
 }
 
-.partner_and_clients section h1{
-    margin: 0px;
+.partner_and_clients h1{
+    margin-top: 100px;
     height: 50px;
-    padding: 12px;
+    padding: 7px;
+
 
     color: white;
     background: #5b9fe0;
@@ -954,7 +993,7 @@ article{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 280px;
+    width: 270px;
     height: 300px;
 
 }
@@ -1012,6 +1051,14 @@ article{
 
     }
 
+    .partner_and_clients h1{
+
+        padding: 12px;
+
+        font-size: 24px;
+
+    }
+
 
 }
 
@@ -1019,20 +1066,22 @@ article{
 
 
 .trade_marks section{
-    margin-top: 100px;
-    position: relative;
+    position: fixed;
     height: 100%;
     width: 100%;
+    max-width: none;
 
     background-image: url(trade_marks.jpg);
     background-size: cover ;
     overflow: scroll;
 }
 
-.trade_marks section h1{
+.trade_marks h1{
     margin: 0px;
+    margin-top: 100px;
     height: 50px;
     padding: 12px;
+    font-size: 25px;
 
     color: white;
     background: #5b9fe0;
@@ -1042,15 +1091,25 @@ article{
 }
 
 .trade_marks .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
 }
 
 .trade_marks #column-1,
 .trade_marks #column-2,
 .trade_marks #column-3 {
-    float: left;
     min-height: 100%;
     text-align: left;
     padding: 20px;
@@ -1092,7 +1151,16 @@ article{
     font-weight: bold;
 }
 
+
+@media screen and (max-width: 900px){
+    .trade_marks section{
+        position: relative;
+    }
+}
+
+
 @media screen and (max-width: 700px){
+
     .trade_marks section{
         height: auto;
         position: relative;
@@ -1100,11 +1168,13 @@ article{
     .trade_marks #column-1,
     .trade_marks #column-2,
     .trade_marks #column-3{
-        float: none;
         display: block;
         width: 100%;
         min-height: initial;
 
+    }
+    .trade_marks h1{
+        font-size: 24px;
     }
     .trade_marks .wrapper {
         height: auto;
@@ -1112,17 +1182,22 @@ article{
 
 
 }
+@media screen and (max-width: 700px){
 
-.about section{
-    margin-top: 100px;
-    position: relative;
-    width: 100%;
+    .trade_marks h1{
+        font-size: 20px;
+    }
 
 }
-.about section h1{
-    margin: 0px;
+
+.about section{
+    max-width: none;
+
+}
+.about h1{
+    margin-top: 100px;
     height: 50px;
-    padding: 12px;
+    padding: 7px;
 
     color: white;
     background: #5b9fe0;
@@ -1131,9 +1206,19 @@ article{
     text-align: center;
 }
 .about .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .about .inline{
     display: inline;
@@ -1147,7 +1232,6 @@ article{
 .about #column-1,
 .about #column-2,
 .about #column-3 {
-    float: left;
     min-height: 100%;
     text-align: justify;
     padding: 20px;
@@ -1174,28 +1258,26 @@ article{
     min-width: 50px;
     text-align: center;
 }
-
-@media screen and (max-width:1200px) {
-
-    .about p,.about ul{
-        font-size: 14px;
+@media screen and (min-width:1500px){
+    .about #column-1,
+    .about #column-2,
+    .about #column-3 {
+        font-size: 20px;
     }
 }
 
+
 @media screen and (max-width:900px) {
+    .about .wrapper{
+        display: block;
+    }
     .about #column-1,
     .about #column-2,
     .about #column-3{
-        float: none;
         display: block;
         width: 100%;
     }
 
-    .about #column-1 div img,
-    .about #column-2 div img,
-    .about #column-3 div img{
-        width: 50%;
-    }
     .about p,.about ul{
         font-size: 16px;
     }
@@ -1206,11 +1288,11 @@ article{
 }
 @media screen and (max-width:700px) {
 
-    .about #column-1 div img,
-    .about #column-2 div img,
-    .about #column-3 div img{
-        width: 70%;
-    }
+    /*.about #column-1 div img,*/
+    /*.about #column-2 div img,*/
+    /*.about #column-3 div img{*/
+        /*width: 70%;*/
+    /*}*/
 
 }
 @media screen and (max-width:500px) {
@@ -1224,15 +1306,33 @@ article{
 }
 
 
+@media screen and (max-width:400px) {
+
+    .about h1{
+        padding: 12px;
+        font-size: 24px;
+    }
+
+}
+
 /*img_wrapper*/
+.contacts {
+    background: #f6f7f0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    max-width: none;
+}
+
 .contacts section{
 
     margin-top: 100px;
     position: relative;
     height: 100%;
     width: 100%;
-    background: #f6f7f0;
     padding-top: 20px;
+    background: transparent;
 
 }
 
@@ -1256,6 +1356,16 @@ article{
     margin-bottom: 50px;
 
     box-shadow: 0 0 15px 5px rgba(91,159,224,0.5);
+}
+
+@media screen and (max-width: 1000px){
+
+    .contacts {
+
+        position: relative;
+
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -1282,6 +1392,14 @@ article{
     .contacts .form_wrapper {
 
         margin-top: 0px;
+
+    }
+
+    .contacts .form_wrapper .header_form h1{
+
+        height: auto;
+
+        font-size: 24px;
 
     }
 
@@ -1341,6 +1459,9 @@ article{
     padding: 12px;
 
     background: #f6f7f0;
+    color: black;
+
+    font-size: 14px;
 
 
     width: 250px;
@@ -1356,6 +1477,7 @@ article{
     width: 660px;
     margin-bottom: 30px;
     height: 100px;
+    resize: none;
 }
 .content_form form div{
     display: -webkit-box;
@@ -1441,7 +1563,6 @@ article{
     /*background: #5b9fe0;*/
     border:1px solid #199e5a;
     box-sizing: border-box;
-    color: white;
     /*background: rgba(91,158,224,0.4);*/
 
 }
@@ -1641,9 +1762,6 @@ body{
     padding: 0px;
     font-family: Roboto-Regular;
 }
-h1.head{
-    margin-top: 120px;
-}
 body button {
     -webkit-appearance: none;
     background: none;
@@ -1657,12 +1775,12 @@ body .products{
     padding-bottom: 20px;
 
 }
-@media screen and (min-width: 1440px) {
 
-    body{
-        width: 1440px;
-    }
-
-
+section{
+    margin: 0 auto;
+    width: 96%;
+    max-width: 1400px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 /*# sourceMappingURL=build.css.map*/
