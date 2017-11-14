@@ -53,9 +53,9 @@ ul.nav{
     list-style: none;
     text-align: right;
     right: 1px;
-    top: 24px;
+    top: 15px;
     color: #000;
-    font-size: 16px;
+    font-size: 15px;
     display: none;
 }
 ul.nav li {
@@ -63,7 +63,7 @@ ul.nav li {
     margin-right:-1px;
 }
 ul.nav li a{
-    padding: 40px 10px;
+    padding: 32px 10px;
     text-decoration: none;
     color: black;
 }
@@ -80,7 +80,7 @@ ul.nav li a.active{
 }header{
     position: fixed;
     width: 100%;
-    height:99px;
+    height:80px;
     background: white;
     border-bottom: 2px solid #5b9fe0;
     top: 0px;
@@ -88,12 +88,6 @@ ul.nav li a.active{
     transition: all 0.5s;
 }
 
-header img {
-    position: absolute;
-    height: 80px;
-    left: 40px;
-    top: 10px;
-}
 
 
 header.full_screen button{
@@ -192,26 +186,48 @@ header.active ul.nav li{
 
         font-size:14px;
     }
+}
+
+header a.logo {
+
+    position: absolute;
+    left: 40px;
+    top: 10px;
+
+}
+
+header a img{
+    height: 60px;
 }aside .type_bar{
     margin: 0px;
 
     width: 215px;
 
     border-top:1px solid #d3d3d3;
-    border-bottom:1px solid #d3d3d3;
     position: relative;
 
 }
 
-aside .type_bar p {
+aside .type_bar button {
+    -webkit-appearance: none;
+    outline: none;
     position: relative;
-    width: 200px;
+    width: 100%;
     border: 1px solid #d3d3d3;
     padding: 5px;
+    box-shadow: none;
+    font-size: 16px;
+    text-align: left;
 
 }
 
-aside .type_bar p:after, aside .type_bar p:before{
+aside .type_bar button.show {
+
+    box-shadow: inset 0px 0px 12px grey;
+
+}
+
+aside .type_bar button:after, aside .type_bar button:before{
     content: "";
     width: 0;
     height: 0;
@@ -220,7 +236,7 @@ aside .type_bar p:after, aside .type_bar p:before{
     margin-top: -6px;
 }
 
-aside .type_bar p:after{
+aside .type_bar button:after{
     position: absolute;
     top: 21px;
 
@@ -228,7 +244,7 @@ aside .type_bar p:after{
     border-top: 8px solid #000;
 }
 
-aside .type_bar p:before{
+aside .type_bar button:before{
 
     position: absolute;
     bottom: 17px;
@@ -239,11 +255,12 @@ aside .type_bar p:before{
 }
 
 aside .type_bar ul.products_types{
+    width: 100%;
 
     position: absolute;
     visibility: hidden;
     z-index: 2;
-    top: 76px;
+    top: 75px;
     left: -40px;
     display: block;
 
@@ -252,11 +269,11 @@ aside .type_bar ul.products_types.show{
     visibility: visible;
 }
 
-aside .type_bar ul.products_types:hover{
-    visibility: visible;
-}
+/*aside .type_bar ul.products_types.show{*/
+    /*visibility: visible;*/
+/*}*/
 aside .type_bar ul.products_types li{
-    width: 200px;
+    width: 100%;
     padding: 5px;
     list-style: none;
     background: #fff;
@@ -264,6 +281,8 @@ aside .type_bar ul.products_types li{
 
     border: 1px solid #d3d3d3;
     border-top: none;
+
+    box-sizing: border-box;
 
 
 }
@@ -348,7 +367,7 @@ input.priceNav{
     margin-left: 20px;
     padding-right: 50px;
     border-right: 1px solid #d3d3d3;
-    top:120px;
+    top:100px;
     transition: all 0.5s;
     z-index: 10;
 
@@ -378,6 +397,7 @@ aside .side_bar_wrapper{
     border: 1px solid #d3d3d3;
     z-index: 2;
     box-sizing: border-box;
+    transition: border 0.5s;
 }
 .item:hover{
     border: 4px solid #5b9fe0;
@@ -452,7 +472,7 @@ article{
 
     padding-left: 50px;
     margin-left: 270px;
-    margin-top:120px;
+    margin-top:100px;
 
     display: -webkit-box;
 
@@ -520,7 +540,7 @@ article{
     height: 100%;
     background: rgba(255,255,255, 0.9);
     z-index: 10;
-    top:101px;
+    top:81px;
 
 }
 .products.mobile aside.active .side_bar_wrapper *{
@@ -790,7 +810,20 @@ article{
     }
 
 }
-.basket_side_bar{
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    font-size: 12px;
+}
+input::-moz-placeholder,textarea::-webkit-input-placeholder {
+    font-size: 12px;
+}/* Firefox 19+ */
+input:-moz-placeholder,textarea::-webkit-input-placeholder {
+    font-size: 12px;
+    color:#c0392b;
+}/* Firefox 18- */
+input:-ms-input-placeholder,textarea::-webkit-input-placeholder{
+    font-size: 12px;
+    color:#c0392b;
+}.basket_side_bar{
     float: right;
     width: 30%;
     display: inline-block;
@@ -958,7 +991,7 @@ article{
 }
 
 .partner_and_clients h1{
-    margin-top: 100px;
+    margin-top: 82px;
     height: 50px;
     padding: 7px;
 
@@ -1078,7 +1111,7 @@ article{
 
 .trade_marks h1{
     margin: 0px;
-    margin-top: 100px;
+    margin-top: 82px;
     height: 50px;
     padding: 12px;
     font-size: 25px;
@@ -1195,7 +1228,7 @@ article{
 
 }
 .about h1{
-    margin-top: 100px;
+    margin-top: 82px;
     height: 50px;
     padding: 7px;
 
