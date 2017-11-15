@@ -850,7 +850,10 @@ input:-ms-input-placeholder,textarea::-webkit-input-placeholder{
     box-sizing: border-box;
 }
 .basket_side_bar form textarea{
+    resize: vertical;
+
     height: 100px;
+    max-height: 200px;
 }
 .basket_side_bar form button{
     background: #278c44;
