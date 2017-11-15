@@ -1583,8 +1583,7 @@ input:-ms-input-placeholder,textarea::-webkit-input-placeholder{
 .content_form form span.email:before{
 
     top: -18px;
-    left: 45px;
-
+    left: 50px;
 
 }
 .content_form form span.message:before{

@@ -1,0 +1,1 @@
+<!DOCTYPE html> <html lang=en> <head> <meta charset=UTF-8> <title>KDD_TEST</title> <meta name=viewport content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1"> <link href="build.css" rel="stylesheet"></head> <body> <div id=root></div> <script type="text/javascript" src="build.js"></script></body> </html>
