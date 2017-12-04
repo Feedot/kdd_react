@@ -109,7 +109,7 @@ header .logo_wrapper{
 header.full_screen .logo_wrapper{
 
     height: 100%;
-    border-right: 2px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -125,7 +125,7 @@ header.full_screen .con{
         -ms-flex:1;
             flex:1;
     position: relative;
-    border-left: 1px solid #9b9c9e;
+    border-left: 1px solid #d3d3d3;
 }
 header.full_screen{
     display: -webkit-box;
