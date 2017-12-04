@@ -1923,6 +1923,7 @@ input:-ms-input-placeholder,textarea::-webkit-input-placeholder{
     margin: 0 auto;
     padding: 15px 20px;
     display: block;
+    transition: all 0.5s;
 
 }
 .content_form form button:hover{
@@ -2248,7 +2249,7 @@ input:-ms-input-placeholder,textarea::-webkit-input-placeholder{
 
 .contacts_wd .main_block .circle{
 
-    width: 125px;
+    width: 120px;
     border: 1px solid #5b9fe0;
     position: relative;
     display: -webkit-box;
@@ -2260,7 +2261,7 @@ input:-ms-input-placeholder,textarea::-webkit-input-placeholder{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 125px;
+    height: 120px;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -2268,26 +2269,38 @@ input:-ms-input-placeholder,textarea::-webkit-input-placeholder{
     font-family: EchoesSans-Bold;
     color: #5b9fe0;
     cursor: pointer;
+    transition: all 0.5s ;
 }
-.contacts_wd .main_block .circle:before{
 
-    content: "";
+.contacts_wd .main_block .circle .under_circle{
+
     position: absolute;
-    top: -11px;
-    left: 59%;
-    bottom: 0;
-    margin: -3px 0 -3px -33px;
-    background-size: contain;
-    background-position: 0 0;
-    width: 45px;
-    height: 45px;
-    border-top: 5px solid white ;
-    border-left: 5px solid white ;
-    border-radius: 57px 0px 56px 0px;
-    -webkit-transform: rotate(47deg);
-            transform: rotate(47deg);
+    width: 25%;
+    height: 25%;
+
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    border-radius: 50%;
 
 }
+/*.contacts_wd .main_block .circle:before{*/
+
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: -11px;*/
+    /*left: 59%;*/
+    /*bottom: 0;*/
+    /*margin: -3px 0 -3px -33px;*/
+    /*background-size: contain;*/
+    /*background-position: 0 0;*/
+    /*width: 45px;*/
+    /*height: 45px;*/
+    /*border-top: 5px solid white ;*/
+    /*border-left: 5px solid white ;*/
+    /*border-radius: 57px 0px 56px 0px;*/
+    /*transform: rotate(47deg);*/
+
+/*}*/
 .contacts_wd .main_block .circle.tue:before{
     top: 18px;
     left: 95%;
@@ -2429,6 +2442,8 @@ vertical-align: middle;
     color: #4e4e4d;
     text-transform: uppercase;
 
+    transition: all 0.5s;
+
 
 
 }
@@ -2441,7 +2456,8 @@ vertical-align: middle;
 footer{
     color: #9b9c9e;
     background: #f6f6f6;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    padding-top: 30px;
 }
 
 footer .wrapper{
@@ -2464,7 +2480,7 @@ footer .wrapper div{
     padding-top: 20px;
 }
 footer .wrapper div.first p {
-    font-size: 11px;
+    font-size: 12px;
     text-align: justify;
     line-height: 17px;
 
@@ -2564,6 +2580,8 @@ footer .wrapper div.third form button{
     margin-left: 5px;
     border-radius: 4px;
     letter-spacing: 2px;
+
+    transition: all 0.5s;
 }
 
 footer .wrapper div.third form button:hover{
