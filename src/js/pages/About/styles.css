@@ -1,0 +1,125 @@
+.about .anchor {
+    position: absolute;
+    top: -120px;
+}
+
+/*.about section{*/
+    /*max-width: none;*/
+    /*padding: 0px;*/
+
+/*}*/
+/*.about h1{*/
+    /*margin-top: 82px;*/
+    /*height: 50px;*/
+    /*padding: 7px;*/
+
+    /*color: white;*/
+    /*background: #5b9fe0;*/
+
+    /*box-sizing: border-box;*/
+    /*text-align: center;*/
+/*}*/
+/*.about .wrapper {*/
+    /*display: flex;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*margin: 0 auto;*/
+    /*flex-flow: row wrap;*/
+    /*justify-content: center;*/
+/*}*/
+/*.about .inline{*/
+    /*display: inline;*/
+/*}*/
+/*.about h3{*/
+    /*font-family: bold;*/
+    /*font-style: italic;*/
+/*}*/
+
+
+/*.about #column-1,*/
+/*.about #column-2,*/
+/*.about #column-3 {*/
+    /*min-height: 100%;*/
+    /*text-align: justify;*/
+    /*padding: 10px;*/
+    /*box-sizing:border-box ;*/
+    /*font-size: 16px;*/
+    /*line-height: 1.2;*/
+    /*flex: 1 0 33%;*/
+/*}*/
+
+
+/*.about #column-1 div img,*/
+/*.about #column-2 div img,*/
+/*.about #column-3 div img{*/
+    /*width:100%*/
+/*}*/
+/*.about #column-1 div img.spinner,*/
+/*.about #column-2 div img.spinner,*/
+/*.about #column-3 div img.spinner{*/
+    /*width: auto;*/
+/*}*/
+/*.about div.wrapper div.img_wrapper{*/
+    /*margin-top: 20px;*/
+    /*min-height: 50px;*/
+    /*min-width: 50px;*/
+    /*text-align: center;*/
+/*}*/
+/*@media screen and (min-width:1500px){*/
+    /*.about #column-1,*/
+    /*.about #column-2,*/
+    /*.about #column-3 {*/
+        /*font-size: 20px;*/
+    /*}*/
+/*}*/
+
+
+/*@media screen and (max-width:900px) {*/
+    /*.about .wrapper{*/
+        /*display: block;*/
+    /*}*/
+    /*.about #column-1,*/
+    /*.about #column-2,*/
+    /*.about #column-3{*/
+        /*display: block;*/
+        /*width: 100%;*/
+    /*}*/
+
+    /*.about p,.about ul{*/
+        /*font-size: 16px;*/
+    /*}*/
+    /*.about ul{*/
+        /*text-align: left;*/
+    /*}*/
+
+/*}*/
+/*@media screen and (max-width:700px) {*/
+
+    /*!*.about #column-1 div img,*!*/
+    /*!*.about #column-2 div img,*!*/
+    /*!*.about #column-3 div img{*!*/
+        /*!*width: 70%;*!*/
+    /*!*}*!*/
+
+/*}*/
+/*@media screen and (max-width:500px) {*/
+
+    /*.about #column-1 div img,*/
+    /*.about #column-2 div img,*/
+    /*.about #column-3 div img{*/
+        /*width: 100%;*/
+    /*}*/
+
+/*}*/
+
+
+/*@media screen and (max-width:400px) {*/
+
+    /*.about h1{*/
+        /*padding: 12px;*/
+        /*font-size: 24px;*/
+    /*}*/
+
+/*}*/
+
+/*!*img_wrapper*!*/

@@ -1,0 +1,73 @@
+
+.trade_marks_header{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 600px;
+    background: url("../../../img/trade_marks_header.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #4e4e4d;
+}
+.trade_marks_header h1{
+    transition: all 1s;
+    position: absolute;
+
+    top:60px;
+    left:-20px;
+
+    padding-left: 40px;
+
+    max-width: 900px;
+    line-height: 60px;
+
+    color:rgb(11, 86, 134);;
+    opacity: 0.9;
+
+
+    font-size: 42px;
+    font-family: Romantica;
+
+}
+.trade_marks_header h1 span{
+
+    font-family: "Times New Roman";
+    font-size: 27px;
+
+}
+@media screen and (max-width:1200px) {
+    .trade_marks_header h1{
+        font-size: 33px;
+
+    }
+    .trade_marks_header h1 span{
+        font-size: 21px;
+
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .trade_marks_header h1{
+        font-size: 29px;
+
+    }
+    .trade_marks_header h1 span{
+        font-size: 18px;
+
+    }
+
+}
+@media screen and (max-width:750px) {
+
+    .trade_marks_header {
+
+        background: url("../../../img/trade_marks_header_mobile.jpg") no-repeat;
+        background-size: cover;
+        background-position:center ;
+        height: 400px;
+
+    }
+}
+
+

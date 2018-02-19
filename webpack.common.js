@@ -3,6 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const webpack = require('webpack');
 
 
 module.exports = {
@@ -12,7 +13,6 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        // publicPath: "/dist"
     },
     watchOptions: {
         aggregateTimeout: 100
@@ -38,12 +38,6 @@ module.exports = {
                 }]
             },
             {
-                test: /\\.(gif|png|jpg|svg|webp)$/i,
-                use:{
-                    loader: "file-loader"
-                }
-            },
-            {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
                     use: [
@@ -57,16 +51,16 @@ module.exports = {
                 test: /\.(gif|jpeg|jpg|png|svg)$/,
                 loader: 'file-loader',
                 options: {
-                    name: './img/[name].[ext]',
+                    name: '[name].[ext]',
                 },
             },
             {
-                test: /\.(ttf|eot|woff|woff2)$/,
+                test: /\.(ttf|otf|eot|woff|woff2)$/,
                 loader: 'file-loader',
                 options: {
-                    name: './fonts/[name].[ext]',
+                    name: './fonts/[path][name].[ext]',
                 },
-            },
+            }
         ]
     },
     plugins: [
@@ -78,6 +72,7 @@ module.exports = {
         new ExtractTextPlugin({
             filename: '[name].css'
         }),
+
 
         new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
 

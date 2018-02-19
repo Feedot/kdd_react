@@ -1,46 +1,219 @@
 header{
-    position: relative;
+
+    position: fixed;
     width: 100%;
-    height:99px;
+    height:80px;
     background: white;
-    border-bottom: 2px solid #5b9fe0;
     top: 0px;
+    z-index: 11;
+    transition: all 0.5s;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+
+}
+header .logo_wrapper{
+
+    position: relative;
+    height: 100%;
+
+}
+header.full_screen .logo_wrapper{
+
+    height: 100%;
+    border-right: 1px solid #d3d3d3;
+    flex: 1;
+    position: relative;
+
+}
+header .con{
+    display: none;
+}
+
+header.full_screen .con{
+    display: block;
+    flex:1;
+    position: relative;
+    border-left: 1px solid #d3d3d3;
+    z-index: 3;
+    background: white;
+
+    transition: all 0.3s;
+}
+header.full_screen{
+    display: flex;
+}
+header.full_screen .con button{
     z-index: 5;
 }
+header.full_screen .con button:hover + .show_quantity{
 
-img {
-    position: absolute;
-    height: 80px;
-    left: 40px;
-    top: 10px;
+
+
+    height: 40px;
+
 }
 
-ul{
+
+
+
+
+header.full_screen button{
+    display: none;
+
+}
+header.full_screen .con:hover{
+    box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.6);
+    /*box-shadow: 0 4px 10px #444;*/
+
+}
+header.full_screen .con:active {
+
+    box-shadow:inset 0px 0px 37px 0px rgba(0,0,0,0.3);
+
+}
+header.full_screen .con *{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../../../img/cart_icon.png") no-repeat;
+    background-position: center;
     position: absolute;
-    list-style: none;
-    text-align: right;
-    right: 1px;
-    top: 24px;
-    color: #000;
-    font-size: 16px;
+    padding: 0px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
-ul li {
-    display: inline-block;
-    margin-right:-1px;
+
+header.full_screen ul.nav{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    transition: all 0.3s;
+
 }
-ul li a{
-    padding: 40px 10px;
-    text-decoration: none;
+header.full_screen ul.nav:hover{
+    box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.6);
+}
+
+header.active {
+    position: fixed;
+    height: 100%;
+}
+
+header.active button.active {
+
+
+}
+
+header.active button span{
+
+    outline: none;
+    border-color: transparent ;
+
+}
+
+header.active button span:before {
+
+
+    transform: translateY(-9px) rotate(-45deg);
+
+}
+
+header.active button span:after{
+
+
+    transform: translateY(7px) rotate(45deg);
+
+}
+
+
+header.active ul.nav {
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    height: auto;
+
+}
+
+header.active ul.nav li{
+
+    font-size:inherit;
+
+    display: block;
+}
+
+header.active ul.nav a{
+
+    padding:10px;
+    background: none;
     color: black;
+    border: none;
+
 }
 
-ul li a:hover{
-    background: #5b9fe0;
-    color: white;
+
+header.active ul.nav a:hover{
+
+    color: #6795c9;
 }
 
-ul li a.active{
-    background: #5b9fe0;
-    color: white;
+header.active ul.nav li{
 
+    font-size:18px;
+
+    display: block;
+}
+@media screen and (max-width: 450px) {
+
+    header.active ul.nav li{
+
+        font-size:14px;
+    }
+}
+header a.logo{
+
+    top:0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+header.full_screen a.logo {
+
+    position: absolute;
+
+}
+
+header a.logo:hover{
+    box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.6);
+
+}
+header a.logo:active{
+    box-shadow:inset 0px 0px 37px 0px rgba(0,0,0,0.3);
+
+}
+header a img{
+
+    position: absolute;
+
+    height: 50px;
+
+    right:auto;
+    top: 14px;
+    left: 30px;
+
+}
+
+header.full_screen a img{
+    left: auto;
+    right: 15px;
 }

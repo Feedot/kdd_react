@@ -1,0 +1,22 @@
+.header_content_page{
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.header_content_page button.close{
+    -webkit-appearance: none;
+    background: none;
+    border:none;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #9b9c9e;
+}
+.header_content_page button.close:hover{
+    background: #5b9fe0;
+    color: white;
+}

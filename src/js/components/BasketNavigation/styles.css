@@ -1,0 +1,52 @@
+
+.busket_info {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 10px;
+    width: 190px;
+    font-size: 18px;
+    border: 1px solid #d3d3d3;
+    display: none;
+}
+
+.busket_info button{
+
+    background-color: #4682b4;
+    color: #fff;
+    cursor: pointer;
+    padding: 9px 54px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    display: none;
+
+}
+
+.busket_info .with{
+    border: 1px solid #dfc766;
+    padding: 5px 20px;
+    background: #f0ebcf
+}
+
+.busket_info .with,.busket_info .sum{
+    display: none;
+}
+
+.busket_info p.empty{
+
+    padding: 10px 40px;
+    margin-top: 0;
+    font-size: 16px;
+    border: 1px solid #d3d3d3;
+    display: block;
+
+}
+
+.busket_info.active p.empty {
+
+    display: none;
+}
+.busket_info.active button,.busket_info.active .with,.busket_info.active .sum{
+
+    display: block;
+
+}

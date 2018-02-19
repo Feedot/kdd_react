@@ -1,19 +1,30 @@
 import React,{Component} from 'react'
+import {connect} from 'react-redux'
 
 import Header from '../../containers/Header/index'
+import Footer from '../../containers/Footer/index'
+import TradeMarksHeader from '../../components/TradeMarksHeader'
+import TradeMarksMain from '../../components/TradeMarksMain'
+import './styles.css'
 
 class TradeMarks extends Component {
 
     render(){
 
         return (
-            <div>
+            <div className='trade_marks'>
+
                 <Header/>
-                <h1>Торговые Марки</h1>
+                <TradeMarksHeader/>
+                <TradeMarksMain/>
+                <Footer/>
+
             </div>
         )
     }
 
 }
 
-export default TradeMarks;
+export default connect(
+    state=>({})
+)(TradeMarks)

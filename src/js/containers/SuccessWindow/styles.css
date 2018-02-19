@@ -1,0 +1,40 @@
+.content_page.success {
+
+    width: 500px;
+    height: 130px;
+
+}
+.content_page.success div {
+
+    margin-top: 20px;
+    padding:0 20px;
+    text-align: center;
+
+}
+
+.content_page.success div p {
+    margin-bottom: 25px;
+}
+
+.content_page.success div button{
+
+    padding: 5px 20px;
+    background: #cc8056;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+@media screen and (max-width: 700px) {
+
+    .content_page.success {
+
+        width: 100%;
+        min-height: 140px;
+        height: auto;
+        box-sizing: border-box;
+
+    }
+
+}
+

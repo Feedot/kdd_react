@@ -1,0 +1,255 @@
+.content_form{
+    box-sizing: border-box;
+    background: white;
+    height: 100%;
+}
+
+.content_form form{
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.content_form p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "museo-slab", Georgia, serif;
+    font-weight: 300;
+    font-size: 13px;
+
+    margin-bottom: 40px;
+}
+
+
+.content_form form input,.content_form form textarea{
+
+
+    -webkit-appearance: none;
+    outline: none;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    margin-bottom: 30px;
+    padding: 12px;
+    font-family: Echoes-Sans;
+
+
+    width: 320px;
+    border: 1px solid #c8c9ca;
+    border-radius: 3px;
+    background: none;
+    font-size: 12px;
+    color: #9b9c9e;
+    line-height: 14px;
+    vertical-align: middle;
+
+
+}
+.content_form form input::-webkit-input-placeholder,.content_form form textarea::-webkit-input-placeholder {
+    /*font-size: 11px;*/
+    color: #c8c9ca;
+}
+.content_form form input::-moz-placeholder,.content_form form textarea::-moz-placeholder{
+    color: #c8c9ca;
+}/* Firefox 19+ */
+.content_form form input:-moz-placeholder,.content_form form textarea:-moz-placeholder{
+    color: #c8c9ca;
+}/* Firefox 18- */
+.content_form form input:-ms-input-placeholder,.content_form form textarea:-ms-input-placeholder{
+    color: #c8c9ca;
+}
+.content_form form span{
+    position: relative;
+}
+.content_form form textarea{
+
+    width: 100%;
+    margin-bottom: 30px;
+    height: 175px;
+    resize: none;
+}
+.content_form form div{
+    display: flex;
+    justify-content: space-between;
+}
+.content_form form div input{
+    margin-left: 0px;
+}
+
+.content_form form input:focus,.content_form form textarea:focus{
+
+    /*background: #5b9fe0;*/
+    border:1px solid #199e5a;
+    box-sizing: border-box;
+    /*background: rgba(91,158,224,0.4);*/
+
+}
+
+.content_form form button{
+    border-radius: 4px;
+
+    font-size: 14px;
+
+    line-height: 14px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    min-width: 130px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #2caee2;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: block;
+    transition: all 0.5s;
+
+}
+.content_form form button:hover{
+    background: #206079;
+}
+
+
+@media screen and (min-width: 1500px){
+
+    .content_form form input,.content_form form textarea{
+
+        font-size: 20px;
+        padding: 16px;
+
+    }
+
+    .content_form form input::-webkit-input-placeholder,.content_form form textarea::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+    .content_form form input::-moz-placeholder,.content_form form textarea::-moz-placeholder{
+        font-size: 16px;
+    }
+    .content_form form input:-moz-placeholder,.content_form form textarea:-moz-placeholder{
+        font-size: 16px;
+    }
+    .content_form form input:-ms-input-placeholder,.content_form form textarea:-ms-input-placeholder{
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px){
+
+    .content_form form input{
+
+        width:250px;
+        margin-bottom: 20px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 900px){
+
+    .content_form{
+
+        width: 100%;
+        float: none;
+
+    }
+    .content_form form div{
+        display: block;
+    }
+    .content_form form input{
+        display: block;
+
+        width:100%;
+
+    }
+
+    .content_form form textarea{
+
+        width: 100%;
+        margin-bottom: 30px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 570px){
+
+    .content_form form input,.content_form form textarea{
+
+        width: 100%;
+
+    }
+    .content_form form textarea{
+        box-sizing: border-box;
+    }
+    .content_form form div{
+        display: block;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .content_form form div span{
+        display: block;
+    }
+    .content_form form span.message{
+        /*display: inline-block;*/
+    }
+    .content_form form span.message:after{
+        top:-102px;
+        left: 1px;
+
+    }
+    .content_form form span.message:before{
+        top: -103px;
+        left: 132px;
+    }
+    .content_form form span.number {
+        margin: 0;
+        display: block;
+        margin-top: 20px;
+    }
+    .content_form form span.number input{
+        margin: 0;
+        display: block;
+    }
+
+    .content_form form span.number:after{
+
+        left: 1px;
+        top: -17px;
+    }
+    .content_form form span.number:before{
+        top: -19px;
+        left: 69px;
+    }
+
+    .content_form form button{
+
+        position: static;
+        display: block;
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 450px){
+
+    .content_form .header_form h1 {
+        font-size: 28px;
+    }
+
+}
+
+

@@ -1,0 +1,48 @@
+
+.basket_content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.basket_content h1{
+
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    font-size:40px;
+    font-family: EchoesSans-Black;
+    padding-bottom: 40px;
+    border-bottom: 4px solid #5b9fe0;
+    margin-bottom: 20px;
+
+
+}
+
+.basket_content h1:after{
+
+    content: "";
+    display: block;
+    margin: 15px auto 0;
+    background: #23abe1;
+    height: 3px;
+    width: 40px;
+
+}
+.basket_content textarea {
+
+    display: none;
+
+}
+.basket_content #conatactForm{
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px){
+
+    .basket_content{
+
+        padding: 20px;
+
+    }
+}

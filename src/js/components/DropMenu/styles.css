@@ -1,0 +1,85 @@
+aside .type_bar{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 900px;
+    transition: all 0.3s;
+
+
+}
+
+aside .type_bar div{
+    display: inline-block;
+}
+
+aside .type_bar button {
+    -webkit-appearance: none;
+    outline: none;
+    text-transform: uppercase;
+    background: #f9f9f9;
+    border: 1px solid #d5d5d5;
+    padding: 10px 15px;
+    line-height: 0.9em;
+    border-radius: 7px;
+    margin: 0px 10px;
+    font-family: Echoes-Sans;
+
+}
+aside .type_bar button:hover{
+    background: #d3d3d36b;
+}
+
+aside .type_bar button.show {
+    background: #d3d3d36b;
+}
+
+
+@media screen and (max-width: 900px){
+
+    aside .type_bar{
+        display: flex;
+        width: 600px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+
+
+    }
+
+    aside .type_bar div {
+        flex-basis: 28%;
+    }
+
+    aside .type_bar div button{
+
+
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+
+}
+@media screen and (max-width: 600px){
+
+    aside .type_bar{
+        width: 400px;
+
+    }
+
+    aside .type_bar div {
+        flex-basis: 32%;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    aside .type_bar{
+        width: 90%;
+    }
+    aside .type_bar div {
+        flex-basis: 50%;
+    }
+
+}

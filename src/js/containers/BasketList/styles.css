@@ -1,0 +1,80 @@
+.basket_table_header,.basket_table_footer{
+
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    padding-left: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+
+
+}
+.basket_table_header * {
+    transition: all 0.3s;
+}
+.basket_table_header span{
+
+    font-size: 22px;
+    font-family: EchoesSans-Black;
+    color: #4b5255;
+    display: inline-block;
+
+
+}
+.basket_table_header div {
+
+    position: absolute;
+    right: 70px;
+    top:20px;
+
+}
+.basket_table_header div span.amount{
+
+    display: inline-block;
+    margin-left: 30px;
+
+}
+.basket_table_footer{
+
+    border-top: none;
+
+    font-family: EchoesSans-Bold;
+
+    text-align: right;
+    padding-right: 100px;
+
+}
+@media screen and (max-width: 600px){
+    .basket_table_header div{
+        right: 15px;
+    }
+
+    .basket_table_header{
+        padding-left: 15px;
+    }
+
+    .basket_table_header span{
+        font-size: 16px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 380px){
+
+    .basket_table_header span {
+        font-size: 14px;
+    }
+
+    .basket_table_header div span.amount {
+        margin-left: 5px;
+    }
+    .name_price_ammount input {
+        margin-left: 15px;
+    }
+
+}
+
+

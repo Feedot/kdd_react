@@ -1,0 +1,143 @@
+.item{
+    width: 200px;
+    height: 318px;
+    margin: 5px;
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+
+    z-index: 2;
+    box-sizing: border-box;
+    transition: border 0.5s;
+}
+
+.item h3{
+    position: relative;
+
+    font-family: EchoesSans-Bold;
+    font-weight: bold;
+
+    font-size: 1.143em;
+    border-top: 1px solid #dddddd;
+    padding-top: 10px;
+    margin-top: 0px;
+    /*height: 45px;*/
+}
+.item h3:after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 1px;
+    background: #dddddd;
+}
+
+.item div.img_wrapper{
+    width: 180px;
+    margin: auto;
+
+    height: 150px;
+    box-sizing: border-box;
+    position: relative;
+    background: rgba(211,211,211, 0.5);
+    margin-bottom: 10px;
+
+}
+.item .shadow_wrapper {
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    background: transparent;
+    top:0px;
+    left: -10px;
+}
+.item .shadow_wrapper:hover{
+
+    background-color: rgba(0,0,0,.1);
+
+}
+
+.item div.img_wrapper img.loaded{
+    width: 100%;
+    height: 100%;
+}
+.item div.img_wrapper img.spinner{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+}
+
+.item span{
+    color: #23abe1;
+    font-family: EchoesSans-Black;
+    font-size:  2.5em;
+    padding: 0px;
+    line-height: 45px;
+    display: block;
+    margin: 0;
+}
+
+.item button {
+    -webkit-appearance: none;
+    font-size: 16px;
+    margin-left: 5px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+.item button.more{
+    font-size: 12px;
+    color: #706f6f;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #dddddd;
+    line-height: 26px;
+    padding: 0 30px;
+}
+.item button.more:hover{
+    background: #dddddd;
+}
+.item button.in_basket{
+
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: #2caee2;
+
+}
+
+.item button.in_basket.active {
+
+    padding: 6px 35px;
+
+}
+
+.item button.in_basket.active, .item button.more.active{
+    display: inline;
+}
+.item button.delete.ubpdate{
+
+    background: #199e5a;
+
+}
+.item .button_group{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+@media screen and (max-width: 900px){
+
+    .item .shadow_wrapper {
+        display: none;
+    }
+
+}

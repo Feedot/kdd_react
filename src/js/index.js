@@ -1,20 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux'
-import {ConnectedRouter as Router} from 'react-router-redux'
+import {Router, Route } from 'react-router'
 
 import App from "./containers/App/index"
 import store, {history} from "./store"
 import '../css/styles.css'
 
-store.subscribe( ()=>{
 
-    console.log('subscribe', store.getState());
+// store.subscribe( ()=>{
+//
+//     console.log('subscribe', store.getState());
+//
+//
+// })
+
+// if ( window.location.pathname !== '/dist' ) {  window.location.pathname = '/dist' };
+
+export const pathname = window.location.pathname;
+console.log(pathname);
 
 
-})
-
-const root = document.getElementById('root');
 
 ReactDOM.render(
 
@@ -22,14 +28,14 @@ ReactDOM.render(
 
         <Router history={history} >
 
-            <App/>
+            <App name={pathname}/>
 
         </Router>
 
     </Provider>,
 
-    root
+    document.getElementById('root')
 
-)
+);
 
 

@@ -1,73 +1,82 @@
 import React, {Component} from 'react'
-
 import { connect } from 'react-redux'
-
-import logo from '../../../img/logo.jpg'
-
+import ReactResizeDetector from 'react-resize-detector';
 import {Link} from 'react-router-dom'
+
+import logo from '../../../img/logo.png'
+import cartIcon from '../../../img/cart_icon.png'
+import ButtonMenu from '../../components/ButtonMenu'
+import CustomLink from '../../components/CustomLink/index'
+import Navigation from '../../components/Navigation'
 
 import './header.css'
 
 class Header extends Component {
 
-    changeLink(e){
+    changeToMobileClass(e){
 
-        this.props.chooseLink(e.target.name)
+        let button = document.querySelector('header').getElementsByTagName('button')[0];
+        this.props.changeClass(button)
+
+        if( window.innerWidth > 900) {
+            this.props.changeHeaderClass('full_screen');
+
+        }
+        else if (700 < window.innerWidth && window.innerWidth < 900)  {
+            this.props.changeHeaderClass('tablet');
+        }
+        else if (400 < window.innerWidth < 700)  this.props.changeHeaderClass('mobile');
+        else if (window.innerWidth < 400)  this.props.changeHeaderClass('mini_mobile');
 
 
     }
 
     render(){
+
         return (
 
-            <header>
+                <header className={this.props.headerClassName}>
 
-                <img src={logo}/>
+                    <ReactResizeDetector handleWidth onResize={this.changeToMobileClass.bind(this)} />
+                    <div className="logo_wrapper">
+                        <Link className="logo" to={this.props.pathname}><img src={logo}/></Link>
+                    </div>
 
-                <ul>
-                    {
-                        this.props.navigation.location.map((navItem,index)=>{
+                    <Navigation/>
 
-                           let activeItem = navItem.link === this.props.navigation.activeClass  ?  'active' : " "
-                            return (
+                    <CustomLink/>
 
-                                <li key={index}>
+                    <ButtonMenu/>
 
-                                    <Link to={navItem.link}
-                                          name={navItem.link}
-                                          className={ this.props.navigation.className + " " + activeItem }
-                                          onClick={this.changeLink.bind(this)}>
+                </header>
 
-                                        {navItem.name.toUpperCase()}
-
-                                    </Link>
-
-                                </li>
-
-                            )
-
-                        })
-                    }
-                </ul>
-
-            </header>
         )
     }
 
 }
 
 export default connect(
+
     state=>({
 
-        navigation: state.navigation
+        headerClassName: state.navigation.classes.headerClassName,
+        pathname: state.navigation.pathname,
 
         }),
+
     dispatch=>({
 
-        chooseLink : linkName =>{
+        changeHeaderClass: (headerClassName)=>{
 
-            dispatch({type:'ACTIVE_LINK', payload: linkName})
+            dispatch({ type:"CHANGE_HEADER_CLASS", payload: headerClassName })
+            dispatch({type:'CLOSE_MOBILE_FILTER'})
 
+        },
+        changeClass: (button)=>{
+
+            dispatch({type:"CHANGE_MENU_BUTTON_CLASS", payload:button})
         }
+
     })
+
 )(Header) ;

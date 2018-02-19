@@ -1,0 +1,106 @@
+.section_about_us {
+    position: relative;
+}
+.section_about_us h1 {
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    font-size:40px;
+    font-family: EchoesSans-Black;
+    margin-bottom: 20px;
+
+
+}
+.section_about_us h1:after{
+
+    content: "";
+    display: block;
+    margin: 15px auto 0;
+    background: #23abe1;
+    height: 3px;
+    width: 40px;
+}
+.section_about_us .wrapper{
+
+    display: flex;
+
+}
+.section_about_us .wrapper figure{
+    height: 400px;
+    flex: 1;
+    margin:0px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Echoes-ThinItalic;
+
+    line-height: 3.3em;
+
+    vertical-align: middle;
+}
+.section_about_us .wrapper .image img{
+
+    width: 100%;
+
+}
+@media screen and (max-width: 1300px){
+    .section_about_us .wrapper figure{
+
+        flex: 2;
+        line-height: 2.3em;
+
+    }
+
+    .section_about_us .wrapper figure p{
+
+        margin-top: 0px;
+
+    }
+
+
+
+    .section_about_us .wrapper figure.image{
+        flex: 1;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+
+
+    .section_about_us .wrapper figure{
+
+        line-height: 1.8em;
+
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+
+    .section_about_us .wrapper figure{
+
+        flex: 2;
+        line-height: 1.3em;
+
+    }
+}
+
+@media screen and (max-width: 900px){
+    .section_about_us .wrapper{
+        display: block;
+    }
+
+    .section_about_us .wrapper .image{
+        height: auto;
+    }
+
+
+    .section_about_us .wrapper figure{
+
+        flex: 1;
+        line-height: 1.3em;
+
+    }
+}
+
