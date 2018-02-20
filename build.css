@@ -210,6 +210,7 @@ header.full_screen ul.nav{
         -ms-flex-pack: center;
             justify-content: center;
     transition: all 0.3s;
+    z-index: 5;
 
 }
 header.full_screen ul.nav:hover{
@@ -823,7 +824,7 @@ aside .side_bar_wrapper h1:after{
 .products article .filter *{
     transition: all 0.3s;
 }
-.products article .filter a,.products article .filter button {
+.products article .filter a,.products article .filter button, .products article .filter .con {
     text-align: center;
     width: 50%;
     font-size: 16px;
@@ -872,7 +873,7 @@ aside .side_bar_wrapper h1:after{
 .products.tablet aside,.products.mobile aside{
 
     position: fixed;
-    margin-left: -100%;
+    margin-left: -110%;
 
 }
 
@@ -2340,6 +2341,87 @@ footer .wrapper div.third div.img_wrapper img{
 .about .anchor {
     position: absolute;
     top: -120px;
+}
+.about .loadBar{
+
+    width: 100%;
+    min-height: 700px;
+    position: relative;
+
+}
+.about .loadBar div.box_wrapper{
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 96px;
+    height: 100px;
+    background: white;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.about .loadBar div.box_wrapper div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.about .loadBar div.box_wrapper div img{
+    position: absolute;
+}
+.about .loadBar div.box_wrapper div.middle_box{
+    -webkit-animation-name: box;
+            animation-name: box;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+    background: white;
+    width: 110px;
+    left: 100%;
+
+}
+.about .loadBar div.box_wrapper div.front_box img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 70px;
+}
+.about .loadBar div.box_wrapper div.back_box img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    width: 95px;
+
+}
+@-webkit-keyframes box {
+    0%{
+        left: 105px;
+    }
+    50%{
+        left: -5px;
+    }
+    100%{
+        left: 105px;
+    }
+
+}
+@keyframes box {
+    0%{
+        left: 105px;
+    }
+    50%{
+        left: -5px;
+    }
+    100%{
+        left: 105px;
+    }
+
 }
 
 /*.about section{*/
