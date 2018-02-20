@@ -2690,7 +2690,7 @@ footer .wrapper div.third div.img_wrapper img{
 
 }
 .section_about_us .wrapper figure{
-    height: 400px;
+    min-height: 400px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
