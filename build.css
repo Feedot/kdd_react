@@ -2101,7 +2101,7 @@ footer .wrapper div.third div.img_wrapper{
 footer .wrapper div.third div.img_wrapper img{
     width: 100%;
 }
-@media screen and (max-width: 1240px){
+@media screen and (min-width: 1240px){
 
     .fix footer{
         position: fixed;
