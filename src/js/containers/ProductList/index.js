@@ -5,12 +5,31 @@ import iconUp from "../../../img/arrow_up.png";
 import cartIcon from "../../../img/cart_icon.png";
 import filterIcon from "../../../img/filter_icon.png";
 import { goToTop } from "react-scrollable-anchor";
-import { Link } from "react-router-dom";
+import { Link , Redirect} from "react-router-dom";
 
 import ProductItem from "../../components/ProductItem/index";
 import "./styles.css";
 
+
+
 class ProductList extends Component {
+
+  returnLink(props) {
+
+      if(props !==0 ) {
+          return(
+              <Link to={'/basket'} >
+                <img src={cartIcon} alt="" />
+              </Link>
+          )
+      }else {
+          return (
+              <Link to={'/products'} >
+                <img src={cartIcon} alt="" />
+              </Link>
+          )
+      }
+  }
   showMobileFilter(e) {
     this.props.onShowMobileFilter(e.target.className);
   }
@@ -47,10 +66,7 @@ class ProductList extends Component {
             >
               <img src={filterIcon} alt="" />
             </button>
-
-            <Link to={"/basket"}>
-              <img src={cartIcon} alt="" />
-            </Link>
+              {this.returnLink(this.props.quantity)}
           </div>
 
           {this.props.items.map((item, index) => {

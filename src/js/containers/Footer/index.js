@@ -75,7 +75,7 @@ class Footer extends Component {
               <div className={"partners_icon"}>
                 {this.props.imagesList.map((img, index) => {
                   return (
-                    <div className="img_wrapper">
+                    <div key={index} className="img_wrapper">
                       <img key={index} src={images[img]} />
                     </div>
                   );

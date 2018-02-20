@@ -44,7 +44,7 @@
 .products article .filter *{
     transition: all 0.3s;
 }
-.products article .filter a,.products article .filter button {
+.products article .filter a,.products article .filter button, .products article .filter .con {
     text-align: center;
     width: 50%;
     font-size: 16px;
@@ -93,7 +93,7 @@
 .products.tablet aside,.products.mobile aside{
 
     position: fixed;
-    margin-left: -100%;
+    margin-left: -110%;
 
 }
 

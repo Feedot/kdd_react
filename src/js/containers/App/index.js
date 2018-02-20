@@ -8,7 +8,7 @@ import About from "../../pages/About";
 import Contacts from "../../pages/Contacts";
 import Basket from "../../pages/Basket";
 
-const publicPath = "/kdd_react/";
+const publicPath = "/";
 
 export const routeCodes = {
   about: publicPath,

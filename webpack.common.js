@@ -14,9 +14,7 @@ module.exports = {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
     },
-    watchOptions: {
-        aggregateTimeout: 100
-    },
+    watch: true,
     module: {
         rules: [
             {
@@ -60,6 +58,10 @@ module.exports = {
                 options: {
                     name: './fonts/[path][name].[ext]',
                 },
+            },
+            {
+                test: /\.json$/,
+                loader: 'json-loader',
             }
         ]
     },

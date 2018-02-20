@@ -17,7 +17,6 @@ import "../css/styles.css";
 // if ( window.location.pathname !== '/dist' ) {  window.location.pathname = '/dist' };
 
 export const pathname = window.location.pathname;
-console.log(pathname);
 
 ReactDOM.render(
   <Provider store={store}>
